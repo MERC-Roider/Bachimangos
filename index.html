@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Bachimangos — El Sabor de Coabem</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,900;1,700&family=DM+Sans:wght@400;500;600&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+
+  <!-- ── Hero ─────────────────────────────────────────── -->
+  <section class="hero" id="inicio">
+    <div class="hero-content">
+      <span class="hero-eyebrow">🥭 100% mango natural</span>
+      <h1 class="hero-title">El sabor<br/>De<br/><em>COBAEM</em></h1>
+      <p class="hero-desc">
+        Mangos frescos, locales de bachilleres. 
+        Bachimangos es el antojo que Deja Huella.
+      </p>
+      <div class="hero-actions">
+        <a href="#productos" class="btn-ghost">Ver productos ↓</a>
+      </div>
+    </div>
+
+    <div class="hero-visual">
+      <div class="hero-video-placeholder">
+        <video
+          class="hero-video"
+          src="wvideo.mp4"
+          autoplay
+          muted
+          loop
+          playsinline
+          position: relative
+          poster="video/hero-poster.jpg"
+          aria-label="Video del producto Bachimangos"
+        >
+          <!-- Fallback message if browser can't play the video -->
+          <p class="hero-video-fallback">
+            Tu navegador no soporta video HTML5.<br/>
+            Reemplaza <code>src</code> con la ruta a tu archivo <code>.mp4</code>.
+          </p>
+        </video>
+       <button id="mute-btn" class="mute-btn" aria-label="Activar sonido">🔇</button>
+       </div>
+  </section>
+
+  <div class="band" role="marquee" aria-label="Características">
+    <span class="band-item"><span class="band-dot"></span>Hecho a mano</span>
+    <span class="band-item"><span class="band-dot"></span>Sin conservadores</span>
+    <span class="band-item"><span class="band-dot"></span>Mango 100% fresco</span>
+  </div>
+
+  <section class="products" id="productos">
+    <p class="section-label">Lo que hacemos</p>
+    <div class="products-grid">
+
+      <article class="product-card">
+        <img class="product-thumb" src="wimg1.jpeg" alt="Mango con chile" />
+        <div class="product-info">
+        </div>
+      </article>
+
+      <article class="product-card">
+        <img class="product-thumb" src="wimg2.jpeg" alt="Mango con chile" />
+        <div class="product-info">
+          <p class="product-tag">Especial</p>
+          <h3 class="product-name">Bachi Chamoy</h3>
+          <p class="product-desc">Mango enchilado bañado en chamoy artesanal de la casa. Para los valientes.</p>
+          <span class="product-price">Desde $55</span>
+        </div>
+      </article>
+  </section>
+
+
+  <section class="why" id="nosotros">
+    <div class="why-left">
+      <p class="section-label">Por qué nosotros</p>
+      <h2 class="section-title">Sabor real,<br/>hecho con amor</h2>
+      <p class="why-lead">Cada Bachimango nace con mango de nuestro plantel recolectados y preparados por los alumnos del cobaem, con puro sabor.</p>
+    </div>
+    <ul class="why-list">
+      <li class="why-item">
+        <span class="why-icon">🌿</span>
+        <div>
+          <p class="why-item-title">Ingredientes naturales</p>
+          <p class="why-item-text">Solo usamos mango de temporada y recolectados del plantel</p>
+        </div>
+      </li>
+      <li class="why-item">
+        <span class="why-icon">✋</span>
+        <div>
+          <p class="why-item-title">Preparación artesanal</p>
+          <p class="why-item-text">Todo se hace a mano por la capacitacion de turismo</p>
+        </div>
+      </li>
+      <li class="why-item">
+        <span class="why-icon">💬</span>
+        <div>
+          <p class="why-item-title">Pide lo que se te antoje de el menu</p>
+          <p class="why-item-text">Elige nivel de chile, tipo de chamoy y presentación. Tu antojo, tus reglas.</p>
+        </div>
+      </li>
+    </ul>
+  </section>
+
+
+  <section class="cta-banner" id="pedidos">
+    <h2 class="cta-title">¿Listo para el antojo?</h2>
+      </section>
+
+
+  <footer>
+    <span class="footer-logo">Bachimangos</span>
+    <nav class="footer-links" aria-label="Footer">
+      <a href="productos.html">Productos</a>
+      <a href="nosotros.html">Nosotros</a>
+    </nav>
+    <p class="footer-copy">© 2026 Bachimangos. Hecho con 🥭 y mucho chile.</p>
+  </footer>
+<script src="script.js"></script>
+</body>
+</html>

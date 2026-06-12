@@ -1,0 +1,122 @@
+/* =====================================================
+   secondary.css — Shared styles for all inner pages
+   Depends on styles.css being loaded first (tokens, reset, footer, etc.)
+   ===================================================== */
+
+/* ── Back bar ─────────────────────────────────────── */
+.back-bar {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.85rem 5vw;
+  background: var(--ink);
+  border-bottom: 1px solid rgba(249,178,52,0.15);
+}
+
+.back-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  font-size: 0.85rem;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  color: rgba(254,246,228,0.65);
+  transition: color var(--transition);
+}
+.back-link:hover { color: var(--mango); }
+.back-link svg   { flex-shrink: 0; }
+
+.back-logo {
+  font-family: var(--ff-display);
+  font-weight: 900;
+  font-size: 1.2rem;
+  color: var(--mango);
+  letter-spacing: -0.02em;
+}
+
+/* ── Page hero ──────────────────────────────────────── */
+.page-hero {
+  background: var(--jungle);
+  padding: 5rem 5vw 4rem;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Thin mango accent line at bottom */
+.page-hero::after {
+  content: '';
+  position: absolute;
+  bottom: 0; left: 0; right: 0;
+  height: 4px;
+  background: var(--mango);
+}
+
+.page-hero .section-label {
+  color: var(--mango);
+  margin-bottom: 0.6rem;
+}
+
+.page-title {
+  font-family: var(--ff-display);
+  font-weight: 900;
+  font-size: clamp(2.8rem, 7vw, 5rem);
+  line-height: 0.95;
+  color: var(--cream);
+  margin-bottom: 1rem;
+}
+
+.page-subtitle {
+  font-size: 1.05rem;
+  color: rgba(254,246,228,0.65);
+  max-width: 520px;
+  line-height: 1.65;
+}
+
+/* ── Main wrapper ───────────────────────────────────── */
+.page-main {
+  background: var(--cream);
+}
+
+/* ── Sections ───────────────────────────────────────── */
+.page-section {
+  padding: 5rem 5vw;
+  background: var(--cream);
+}
+
+.page-section.alt {
+  background: #fff;
+  border-top: 1px solid rgba(26,18,9,0.07);
+  border-bottom: 1px solid rgba(26,18,9,0.07);
+}
+
+.page-section-inner {
+  max-width: 860px;
+  margin: 0 auto;
+}
+
+.page-section-title {
+  font-family: var(--ff-display);
+  font-weight: 700;
+  font-size: clamp(1.5rem, 3.5vw, 2.2rem);
+  color: var(--ink);
+  margin-bottom: 1.5rem;
+  padding-bottom: 0.75rem;
+  border-bottom: 2px solid var(--mango);
+  display: inline-block;
+}
+
+.page-section-body {
+  font-size: 1rem;
+  line-height: 1.75;
+  color: rgba(26,18,9,0.72);
+}
+
+/* ── Responsive ─────────────────────────────────────── */
+@media (max-width: 600px) {
+  .page-hero  { padding: 3.5rem 5vw 3rem; }
+  .page-section { padding: 3.5rem 5vw; }
+  .back-logo  { display: none; }
+}
